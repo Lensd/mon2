@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bulma.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="hero is-success is-fullheight start">
+        <div class="hero-head">
+            <header class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item">
+                            <img src="./images/monday.svg" width="100" height="100" alt="Logo">
+                        </a>
+                        <span class="navbar-burger" data-target="navbarMenuHeroC" onclick="toggleBurger()">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroC" class="navbar-menu" onclick="toggleBurger()">
+                        <div class="navbar-end">
+                            <a class="navbar-item">
+                                Главная
+                            </a>
+                            <a class="navbar-item" href="#courses">
+                                Курсы
+                            </a>
+                            <a class="navbar-item" href="#teachers">
+                                Преподаватели
+                            </a>
+                            <a class="navbar-item" href="#about_academy">
+                                Об академии
+                            </a>
+                            <a class="navbar-item" href="#refs">
+                                Отзывы
+                            </a>
+                            <span class="navbar-item">
+                                <a class="button is-inverted  is-success is-outlined" href="#apply">
+                                    Записаться
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-5-desctop is-1-offset is-vcentered">
+                    <div class="column">
+                        <figure class="image">
+                            <img src="images/header.svg" alt="logo">
+                        </figure>
+                    </div>
+
+                    <div class="column is-5-desctop is-1-offset">
+                        <div class="title is-1">
+                            Monday Academy - освой профессию будущего
+                        </div>
+                        <div class="subtitle">
+                            Monday Academy - это возможность стать востребованным специалистом на рынке труда!
+                        </div>
+                        <button class="button is-large is-danger">
+                            Записаться на курсы
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <section class="section" id="courses">
+        <div class="container">
+            <div class="has-text-centered mb-6">
+                <div class="title is-uppercase is-2">
+                    Наши направления
+                </div>
+                <div class="subtitle has-text-grey">
+                    Выбери специальность в которой ты хочешь стать лучшим специалистом!
+                </div>
+            </div>
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-6">
+                    <div class="tile">
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-warning">
+                                <p class="title">
+                                    Профессиональный курс по Front-End разработке
+                                </p>
+                                <div class="subtitle">
+                                    Веб программирование - очень интересная профессия, требующая немалых познаний в
+                                    разработке и дизайне одновременно. Если вы хотите делать интересный дизайн мобильных
+                                    приложений, сайтов, а так же научиться работать с современной библиотекой JavaScript
+                                    - React, который позволит Вам создавать любые типы дизайна и даже полноценные SPA
+                                    приложения, очень востребованные на современном рынке, то этот 4-х месячный курс для
+                                    Вас!
+                                </div>
+                                <figure class="image">
+                                    <img src="./images/illustrations/python.svg" alt="Logo">
+                                </figure>
+                                <div class="content">
+                                    <button class="button is-inverted is-warning">Подробнее</button>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile is-vertical is-parent is-6">
+                    <article class="tile is-child notification is-info">
+                        <p class="title">Профессиональный курс по Python</p>
+                        <p class="subtitle">
+                            Программирование - одна из самых востребованных и высокооплачиваемых профессий на
+                            сегодняшний день, и во всем обозримом будущем! А главное, у программирования нет границ,
+                            ведь вы можете работать удаленно со всеми странами мира или даже поехать заграницу и
+                            устроиться там! Курс по разработке полноценных веб-сайтов на языке Python. За пять месяцев,
+                            вы научитесь создавать сайты с нуля, писать дизайн и разрабатывать логику для ваших
+                            приложений.
+                        </p>
+                        <div class="content">
+                            <button class="button is-inverted is-info">Подробнее</button>
+                        </div>
+                    </article>
+                    <article class="tile is-success notification is-child">
+                        <p class="title">
+                            Профессиональный курс по графическому дизайну
+                        </p>
+                        <p class="subtitle">
+                            Кто сказал, что дизайнером может стать только тот, у кого есть талант?
+                            Успех это всего 1% таланта - остальное упорный труд!
+                            Дизайнер - одна из перспективных профессий, на которые точно стоит обратить внимание.
+                            Дизайнеры востребованы везде, во всех странах мира.
+                            Курс основан на самых новых технологиях дизайна с использованием таких программ, как Adobe
+                            Photoshop и Adobe Illustrator.
+                        </p>
+                        <div class="content">
+                            <button class="button is-inverted is-success">Подробнее</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <article class="tile is-danger notification is-child">
+                <p class="title">
+                    Цифровой маркетинг и SMM <span class="tag is-warning">Новый курс</span>
+                </p>
+                <p class="subtitle">
+                    Хотели бы работать в сфере IT и быть уверенными в своем будущем, но вас не интересует
+                    программирование или дизайн? Это не беда, Вас обязательно заинтересует на курс по основам такой
+                    интересной профессии, как веб-маркетинг. Вас ждут: топовые подходы и фишки профессии SMM
+                    специалиста.
+                </p>
+                <div class="content">
+                    <button class="button is-inverted is-danger">Подробнее</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+
+    <section class="section is-medium grey-bg" id="teachers">
+        <div class="container mt-6">
+            <div class="has-text-centered ">
+                <div class="title is-2">Наши Наставники</div>
+                <div class="subtitle has-text-grey">Мы собрали специалистов в своей отрасли</div>
+            </div>
+            <div class="columns teachers ">
+                <div class="column mt-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image ">
+                                <img src="./images/maruf.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content has-text-centered">
+                                    <p class="title is-5">Маруф Таиров</p>
+                                    <p class="subtitle is-6">UI/UX Дизайнер</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Дизайнерское чутье - это не то, с чем можно родиться.
+                                Это приходит с большим опытом, но подвластно каждому.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column mt-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="./images/saidravshan.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content has-text-centered">
+                                    <p class="title is-5">Саид Равшан Шакиров</p>
+                                    <p class="subtitle is-6">Full-stack разработчик</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                За программированием будущее, уже сейчас мы видим, что профессия, которая позволит
+                                работать удаленно - необходима.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column mt-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="./images/emil.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content has-text-centered">
+                                    <p class="title is-5">Эмилиан Ерофеевский</p>
+                                    <p class="subtitle is-6">Python разработчик</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Я обожаю программирование. Каждый раз, решая какую то задачу, я чувствую, что могу все!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column mt-6">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="./images/maksud.jpg" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content has-text-centered">
+                                    <p class="title is-5">Максуд Ходжаев</p>
+                                    <p class="subtitle is-6">Python разработчик</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Каждый из нас. Все мы можем заняться програмированием, ведь это не нереально. Если
+                                смогли другие, сможете и вы.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about_academy">
+
+        <div class="columns is-gapless is-vcentered">
+            <div class="column is-6">
+                <figure class="image ">
+                    <img src="images/company/company.jpg" alt="">
+                </figure>
+            </div>
+            <div class="column">
+                <div class="text">
+                    <div class="title has-text-primary is-1 mb-6">
+                        Про Monday Academy
+                    </div>
+                    <div class="subtitle">
+                        Наша компания занимается разработкой веб-приложений на мировом и национальном рынке. Мы
+                        предоставляем курсы, дабы подготовить специалистов, которые выведут производство нашей страны на
+                        новый уровень. Основная цель - открыть двери в будущее, которое уже наступило!
+                    </div>
+                    <div class="container">
+                        <a class="button is-white is-rounded">
+                            <figure class="image is-24x24">
+                                <img src="images/socials/telegram.svg" alt="">
+                            </figure>
+                        </a>
+                        <a class="button is-white is-rounded">
+                            <figure class="image is-24x24">
+                                <img src="images/socials/instagram.svg" alt="">
+                            </figure>
+                        </a>
+                        <a class="button is-white is-rounded">
+                            <figure class="image is-24x24">
+                                <img src="images/socials/facebook.svg" alt="">
+                            </figure>
+                        </a>
+                        <a class="button is-white is-rounded">
+                            <figure class="image is-24x24">
+                                <img src="images/socials/youtube.svg" alt="">
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section grey-bg" id="refs">
+        <div class="container my-6">
+            <div class="has-text-centered my-6">
+                <div class="title is-2">
+                    Что говорят о нас наши выпускники?
+                </div>
+                <div class="subtitle has-text-grey">
+                    Мы уже выпустили несколько десятков студентов и вот что они говорят о наc
+                </div>
+            </div>
+            <div class="columns students">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="./images/students/bekzod.jpg" class="is-rounded"
+                                            alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Бекзод</p>
+                                    <p class="subtitle is-6 has-text-grey">Alpha</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Мне всегда нравилось что-то продумывать и создавать. На обучении нас не учат просто
+                                запоминать, нас учат также думать и оталкиваться от своих идей, особенно на практике.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="./images/students/sherzod.jpg" class="is-rounded"
+                                            alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Шерзод</p>
+                                    <p class="subtitle is-6 has-text-grey">Alpha</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                За пять месяцев я узнал достаточно многое. Я сделал свои первые проекты вместе с
+                                преподователем и теперь занимаюсь собственными разработками.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="./images/icons/woman.svg" alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <div class="media-content">
+                                    <p class="title is-4">Камила</p>
+                                    <p class="subtitle is-6 has-text-grey">Alpha</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                Все очень подробно и качественно. К каждому проходимому элементу прилагается его разбор
+                                и сразу идет его практическое использование. Лучший метод изучения.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="has-text-centered my-6">
+                <div class="title is-2">
+                    Академия Monday в цифрах
+                </div>
+                <div class="subtitle has-text-grey">
+                    Пусть цифры говорят о нас
+                    <br>
+                    <span class="has-text-grey-lighter">1 июля, 2021 года</span>
+                </div>
+            </div>
+            <div class="level has-text-centered">
+                <div class="level-item">
+                    <div>
+                        <img src="./images/icons/tv.svg" alt="Logo">
+                        <p class="heading is-uppercase">
+                            пройденных <br> занятий
+                        </p>
+                        <p class="title">2891</p>
+                    </div>
+                </div>
+
+                <div class="level-item">
+                    <div>
+                        <img src="./images/icons/woman.svg" alt="Logo">
+                        <p class="heading is-uppercase">
+                            учащихся студентов <br> на данный момент
+                        </p>
+                        <p class="title">251</p>
+                    </div>
+                </div>
+
+                <div class="level-item">
+                    <div>
+                        <img src="./images/icons/classroom.svg" alt="Logo">
+                        <p class="heading is-uppercase">
+                            пройденных <br> мастер-классов
+                        </p>
+                        <p class="title">46</p>
+                    </div>
+                </div>
+
+                <div class="level-item">
+                    <div>
+                        <img src="./images/icons/professor.svg" alt="Logo">
+                        <p class="heading is-uppercase">
+                            менторов/<br> преподавателей
+                        </p>
+                        <p class="subtitle">10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section is-medium grey-bg" id="apply">
+        <div class="container">
+            <div class="has-text-centered my-6">
+                <div class="title is-1">Запишитесь к нам на курсы</div>
+                <div class="subtitle has-text-grey">Время стать лучше, запишитесь к нам на курсы прямо сейчас</div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <figure class="image">
+                        <img src="./images/join.svg" alt="">
+                    </figure>
+                </div>
+                <div class="column">
+                    <form class="box">
+                        <div class="field">
+                            <label for="Name" class="label">Полное имя</label>
+                            <div class="control">
+                                <input type="text" class="input" placeholder="введите ваше имя" id="Name">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="Number" class="label">Номер телефона</label>
+                            <div class="control">
+                                <input type="phone" class="input" id="Number" placeholder="+(998__) __-__-__">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label" for="region">Ваш регион</label>
+                            <div class="control is-expanded">
+                                <div class="select is-fullwidth">
+                                    <select name="region" id="region">
+                                        <option>г. Ташкент</option>
+                                        <option>Андижанская область</option>
+                                        <option selected>Бухарская область</option>
+                                        <option>Джизакская область</option>
+                                        <option>Кашкадарьинская область</option>
+                                        <option>Навоийская область</option>
+                                        <option>Наманганская область</option>
+                                        <option>Самаркандская область</option>
+                                        <option>Сурхандарьинская область</option>
+                                        <option>Сырдарьинская область</option>
+                                        <option>Ташкентская область</option>
+                                        <option>Ферганская область</option>
+                                        <option>Хорезмская область</option>
+                                        <option>Республика Каракалпакстан</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button is-primary">Записаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="section">
+        <p class="has-text-centered">
+            <span class="has-text-weight-bold">Monday Academy</span>
+            Подразделение
+            <a href="#"> OOO "Monday Labs".</a>
+        </p>
+    </footer>
+    <script>
+        let toggleBurger = () => {
+            document.querySelector('.navbar-menu').classList.toggle('is-active')
+            document.querySelector('.navbar-burger').classList.toggle('is-active')
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(link.getAttribute('href'))
+                    .scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+
+</html>
